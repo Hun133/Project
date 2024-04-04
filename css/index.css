@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image/background.png'); /* 배경 이미지 설정 */
+    background-size: cover; /* 이미지가 전체 화면을 채우도록 함 */
+    background-repeat: no-repeat; /* 이미지 반복 없음 */
+    background-position: center; /* 이미지를 화면 가운데에 위치 */
+}
+.container {
+    display: flex; /* Flexbox 레이아웃 사용 */
+    flex-direction: column; /* 아이템들을 수직 방향으로 쌓음 */
+    align-items: center; /* 가로축 기준 중앙 정렬 */
+    justify-content: center; /* 세로축 기준 중앙 정렬 */
+    height: 100vh; /* 컨테이너 높이를 뷰포트 높이의 100%로 설정 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+.logo img {
+    width: auto; /* 로고 이미지 원본 크기 유지 */
+    max-width: 20%; /* 화면 너비를 초과하지 않도록 함 */
+    height: auto; /* 이미지 높이 자동 조절 */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin: 20px auto; /* 중앙 정렬을 위해 auto 추가 */
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 500px; /* 고정 너비 혹은 다른 레이아웃에 맞는 값으로 조정 */
+    background-color: white;
+}
+
+.search-container .search-btn {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 25px 0 0 25px; /* 버튼의 왼쪽 모서리만 둥글게 */
+    margin-right: -1px; /* 버튼과 검색 필드 사이 테두리 겹침 방지 */
+}
+
+.search-container .search-btn i.fa {
+    font-size: 18px; /* 아이콘 크기 */
+    color: #333; /* 아이콘 색상 */
+}
+
+.search-container .search-input {
+    flex-grow: 1; /* 나머지 공간 모두 사용 */
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 0 25px 25px 0; /* 오른쪽 모서리 둥글게 */
+}
+

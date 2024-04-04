@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image/background.png'); /* 배경 이미지 설정 */
+    background-size: cover; /* 이미지가 전체 화면을 채우도록 함 */
+    background-repeat: no-repeat; /* 이미지 반복 없음 */
+    background-position: center; /* 이미지를 화면 가운데에 위치 */
+}
+.wrap {
+    /* 하얀 상자 */
+    width: 456px; /* body 밑 div 상자 */
+    height: 337px;
+    margin: 0 auto;
+    background-color: #EDF7FD;
+    border-radius: 10px; /* 상자 둥근 정도 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline : solid 2px #CFE1EB;
+}
+.link-container {
+    margin-top: 20px; /* 로그인 상자와의 간격 */
+    text-align: center; /* 중앙 정렬 */
+}
+.login-container {
+    display: flex; /* Flexbox 레이아웃 사용 */
+    flex-direction: column; /* 아이템들을 수직 방향으로 쌓음 */
+    align-items: center; /* 가로축 기준 중앙 정렬 */
+    justify-content: center; /* 세로축 기준 중앙 정렬 */
+    height: 100vh; /* 컨테이너 높이를 뷰포트 높이의 100%로 설정 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+.logo img {
+    width: auto; /* 로고 이미지 원본 크기 유지 */
+    max-width: 20%; /* 화면 너비를 초과하지 않도록 함 */
+    height: auto; /* 이미지 높이 자동 조절 */
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    margin: 0px 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+.login-form input[type="submit"] {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #2E88C7;
+    color: white;
+    cursor: pointer;
+}
+.login-form input[type="submit"]:hover {
+    background-color: #1A6A9E;
+}
